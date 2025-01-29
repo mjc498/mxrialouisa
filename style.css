@@ -1,0 +1,134 @@
+/* ------------------------------------------ */
+/* COLORS */
+:root {
+    --primary-font-color: #280003;
+    --secondary-font-color: #000000;
+    --primary-color: #E6CFC8;
+    --secondary-color: #0D5C63;
+    --primary-accent-color: #B5D6D6;
+    --secondary-accent-color: #E1AD37;
+}
+
+/* ------------------------------------------ */
+/* GENERAL STYLES */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------ */
+/* HEADER */
+.header {
+    background-color: var(--primary-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 32px;
+    padding-left: 0 !important;
+    height: 80px;
+}
+
+.logo {
+    width: 160px; 
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-font-color);
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(225, 173, 55, 0.6);
+    z-index: -1;
+    transition: height 0.3s ease-in-out;
+}
+
+.nav a:hover::before {
+    height: 40%;
+    top: auto;
+    bottom: 0;
+}
+
+/* ------------------------------------------ */
+/* FOOTER */
+.footer {
+    background-color: var(--primary-accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    max-height: 100%;
+    margin-left: 0;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-font-color);
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.footer-nav a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--secondary-accent-color);
+    z-index: -1;
+    transition: height 0.3s ease-in-out;
+}
+
+.footer-nav a:hover::before {
+    height: 100%;
+    top: auto;
+    bottom: 0;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-accent-color);
+    border-radius: 50%;
+}
