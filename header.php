@@ -1,25 +1,37 @@
-<? php
-// HTML File: header.php
+<?php
+// HEADER
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+
+    <!-- TITLE -->
+    <title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
+
+    <!-- WORDPRESS -->
+    <?php wp_head(); ?>
+    
+    <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Amiri:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="header">
-        <img src="dist/images/logo-transparent.png" alt="Flowers Logo" class="logo">
-        <nav class="nav">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT ME</a>
-            <a href="#work">MY WORK</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
+
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">
+                <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+            </h1>
+            <nav class="main-navigation">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary-menu',
+                    'container'      => 'nav',
+                    'menu_class'     => 'nav-menu',
+                ));
+                ?>
+            </nav>
+        </div>
     </header>
-</body>
-</html>

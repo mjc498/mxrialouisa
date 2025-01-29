@@ -167,3 +167,18 @@ body {
     object-fit: contain; 
     display: block;
 }
+
+/* ------------------------------------------ */
+/* RESPONSIVENESS */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
