@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Amiri:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <img src="dist/images/logo-transparent.png" alt="Flowers Logo" class="logo">
+        <nav class="nav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#work">MY WORK</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="left-column">
+        <h2>TITLE HEADER</h2>
+        <hr class="underline">
+
+        <!-- CAROUSEL -->
+        <div class="carousel-container">
+            <button id="prev" class="carousel-btn left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="107" viewBox="0 0 56 107" fill="none">
+                    <path d="M48 18L11.3563 50.5722C6.89959 54.5337 6.87812 61.4903 11.3103 65.4792L48 98.5" stroke="#0D5C63" stroke-width="16" stroke-linecap="round"/>
+                    <path d="M48 8L11.3563 40.5722C6.89959 44.5337 6.87812 51.4903 11.3103 55.4792L48 88.5" stroke="#B5D6D6" stroke-width="16" stroke-linecap="round"/>
+                </svg>
+            </button>
+        
+            <div class="carousel">
+                <img src="dist/images/image1.jpg" class="carousel-image active">
+                <img src="dist/images/image2.jpg" class="carousel-image">
+                <img src="dist/images/image3.jpg" class="carousel-image">
+            </div>
+        
+            <button id="next" class="carousel-btn right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="107" viewBox="0 0 56 107" fill="none">
+                    <path d="M8 18L44.6437 50.5722C49.1004 54.5337 49.1219 61.4903 44.6897 65.4792L8 98.5" stroke="#0D5C63" stroke-width="16" stroke-linecap="round"/>
+                    <path d="M8 8L44.6437 40.5722C49.1004 44.5337 49.1219 51.4903 44.6897 55.4792L8 88.5" stroke="#B5D6D6" stroke-width="16" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>        
+
+        <!--- MAIN TEXT -->
+        <div class="subheader-container">
+            <h3>Date | Subheader Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="pull-quote-wrapper">
+                <blockquote class="pull-quote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </blockquote>
+            </div>            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <hr class="underline">
+        <h3>Have any questions?</h3>
+        <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="type your name here..." id="name" name="name" required>
+    
+            <input type="email" placeholder="type your email here..." id="email" name="email" required>
+    
+            <textarea id="message" placeholder="type your comment here..." name="message" rows="5" required></textarea>
+    
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+        <!-- LEFT COLUMN -->
+        <aside class="right-column">
+            <div class="sidebar-section">
+                <h4>Categories</h4>
+                <ul class="sidebar-list">
+                    <li>UX Design</li>
+                    <li>UI Design</li>
+                    <li>Graphic Design</li>
+                    <li>Web Development</li>
+                    <li>Content Management</li>
+                    <li>WordPress</li>
+                    <li>Joomla</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+    
+            <div class="sidebar-section">
+                <h4>Skills</h4>
+                <ul class="sidebar-list">
+                    <li>Adobe Creative Cloud</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe After Effects</li>
+                    <li>HTML | CSS | JS</li>
+                    <li>PHP | MySQL</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="dist/images/small-transparent.png" alt="Footer Logo" class="footer-logo">
+            <p class="footer-copyright">© Maria-Louisa Ching 2025</p>
+        </div>
+        <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#work">My Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-icons">
+            <div class="icon-circle">
+                <img src="dist/images/logo-linkedin.png" alt="Icon 1">
+            </div>
+            <div class="icon-circle">
+                <img src="dist/images/logo-github.png" alt="Icon 2">
+            </div>
+        </div>   
+    </footer>   
+
+<script src="script.js"></script>
+</body>
+</html>
