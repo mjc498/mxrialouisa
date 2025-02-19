@@ -1,24 +1,19 @@
 <?php
 // HEADER
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- TITLE -->
-    <title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
-
-    <!-- WORDPRESS -->
     <?php wp_head(); ?>
-    
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Amiri:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-
     <header class="site-header">
         <div class="container">
             <h1 class="logo">
@@ -35,3 +30,5 @@
             </nav>
         </div>
     </header>
+</body>
+</html>
