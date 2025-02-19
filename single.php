@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <main class="post-container">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <article class="post">
@@ -63,5 +62,4 @@
         </article>
     <?php endwhile; endif; ?>
 </main>
-
 <?php get_footer(); ?>
