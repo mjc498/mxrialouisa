@@ -17,13 +17,11 @@
         <!-- CAROUSEL -->
         <div class="carousel-container">
             <button id="prev" class="carousel-btn left"></button>
-        
             <div class="carousel">
                 <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image1.jpg" class="carousel-image active">
                 <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image2.jpg" class="carousel-image">
                 <img src="<?php echo get_template_directory_uri(); ?>/dist/images/image3.jpg" class="carousel-image">
             </div>
-        
             <button id="next" class="carousel-btn right"></button>
         </div>        
 
